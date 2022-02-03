@@ -1,0 +1,36 @@
+public class RangeArmstrongNumber
+{
+
+	public static void main(String[] args) 
+	{
+	
+		for(int i = 100; i<=1000; i++) {
+			int n = i;
+			int m = 0;
+			int s = 0;
+			while(n>0)
+			{
+				m = n%10;
+				s = s + (m *m *m);
+				n = n/10;
+				
+			}
+			if (i==s)
+				System.out.println(i + " its a Armstrong number");
+		}
+	
+	
+		
+		
+
+	}
+
+}
+
+
+/*     153 its a Armstrong number
+*      370 its a Armstrong number
+*      371 its a Armstrong number
+*      407 its a Armstrong number
+*
+*/
