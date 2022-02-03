@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class FindNumInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int arr[] = {5,12,14,6,78,19,1,23,26,35,37,7,52,86,47};
+		
+		
+		System.out.println("enter num to find in array");
+		Scanner sc = new Scanner(System.in);
+		int k = Integer.parseInt(sc.next());
+		
+		for(int i = 0; i<15; i++)
+		{
+			if ( k == arr[i])
+				System.out.println(k + " is in the array");
+		}
+		
+	}
+
+}
+
+
+// output:    19 is in the array
